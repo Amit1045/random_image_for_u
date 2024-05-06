@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random image Generator</title>
+    <style>
+      body{
+        background-color: antiquewhite;
+      }
+        form{
+            align-items: center;
+            
+        }
+        .submit{
+            margin-top: 1px;
+            padding: 5px 2px;
+            border-radius: 15%;
+            border-style:groove;
+            background-color: aquamarine;
+        }
+        .submit:hover{
+            background-color: blueviolet;
+        }
+        .random{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/submit" method="post">
+        <h1 class="random">Random Image generator</h1>
+    <div class="ranimg">
+        <img src="https://picsum.photos/<%= wone %>/<%= hone %>" alt="random image">
+    </div>
+    <br>
+    <label >Enter the width:</label>
+    <input type="number" name="won">
+    <br>
+    <label >Enter the Height:</label>
+    <input type="number" name="hon">
+    <br><button class="submit">Generate image</button>
+</form>    
+</body>
+</html>
